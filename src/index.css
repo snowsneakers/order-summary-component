@@ -1,13 +1,98 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --hover: hsl(245, 66%, 72%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+  background: var(--pale-blue)
+}
+.wrapper{
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.137);
+}
+h1,
+.annualPlan{
+  font-weight: 900;
+  color: var(--dark-blue);
+}
+.priceContent{
+  background: var(--very-pale-blue);
+}
+p,
+.priceYear{
+  color: var(--desaturated-blue);
+}
+.changeLink{
+  color: var(--bright-blue);
+  transition: all .15s ease-in-out;
+}
+.changeLink:hover{
+  color: var(--hover);
+  text-decoration: none;
+}
+.proceedPayment{
+  background: var(--bright-blue);
+  transition: all .15s ease-in-out;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.377);
+}
+.proceedPayment:hover{
+  background: var(--hover);
+}
+.cancelOrder{
+  color: var(--desaturated-blue);
+  transition: all .15s ease-in-out;
+}
+.cancelOrder:hover{
+  color: var(--dark-blue)
+}
+.backgroundMobile{
+  display: none;
+}
+.attribution { 
+  font-size: 11px; text-align: center; 
+  position: absolute;
+  bottom: 2rem;
+  right: 50%;
+  transform: translate(50%);
+}
+.attribution a { 
+  color: var(--bright-blue); 
+}
+
+@media (max-width: 425px){
+  body{
+    padding: 2vw;
+  }
+  .wrapper{
+    width: 100%;
+  }
+  h1{
+    font-size: 5.5vw !important;
+  }
+  p{
+    font-size: 3.8vw !important;
+  }
+  .priceContent{
+    font-size: 3.5vw;
+  }
+  .backgroundDesktop{
+    display: hidden;
+  }
+  .backgroundMobile{
+    display: block;
+  }
 }
