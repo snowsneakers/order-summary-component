@@ -1,5 +1,5 @@
 # Order Summary Component
-This is a solution to the <a href="https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj/hub/order-summary-component-rylqEjeDq">Order Summary Component Frontend Mentor challenge</a>.
+This is a solution to the <a href="https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj">Order Summary Component</a> Frontend Mentor challenge.
 
 [Click here](https://ordersummarycomponentfem.netlify.app/) to see the solution.
 
